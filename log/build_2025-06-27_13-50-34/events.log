@@ -1,0 +1,910 @@
+[0.000000] (-) TimerEvent: {}
+[0.000176] (cartographer_slam) JobQueued: {'identifier': 'cartographer_slam', 'dependencies': OrderedDict()}
+[0.000194] (localization_server) JobQueued: {'identifier': 'localization_server', 'dependencies': OrderedDict()}
+[0.000205] (map_server) JobQueued: {'identifier': 'map_server', 'dependencies': OrderedDict()}
+[0.000216] (path_planner_server) JobQueued: {'identifier': 'path_planner_server', 'dependencies': OrderedDict()}
+[0.000244] (turtlebot3_description) JobQueued: {'identifier': 'turtlebot3_description', 'dependencies': OrderedDict()}
+[0.000255] (turtlebot3_gazebo) JobQueued: {'identifier': 'turtlebot3_gazebo', 'dependencies': OrderedDict([('turtlebot3_description', '/workspace/install/turtlebot3_description')])}
+[0.000266] (turtlebot3_simulations) JobQueued: {'identifier': 'turtlebot3_simulations', 'dependencies': OrderedDict([('turtlebot3_description', '/workspace/install/turtlebot3_description'), ('turtlebot3_gazebo', '/workspace/install/turtlebot3_gazebo')])}
+[0.000473] (turtlebot3_description) JobStarted: {'identifier': 'turtlebot3_description'}
+[0.010750] (cartographer_slam) JobStarted: {'identifier': 'cartographer_slam'}
+[0.016562] (localization_server) JobStarted: {'identifier': 'localization_server'}
+[0.020960] (map_server) JobStarted: {'identifier': 'map_server'}
+[0.025080] (path_planner_server) JobStarted: {'identifier': 'path_planner_server'}
+[0.031018] (turtlebot3_description) JobProgress: {'identifier': 'turtlebot3_description', 'progress': 'cmake'}
+[0.031176] (turtlebot3_description) Command: {'cmd': ['/usr/bin/cmake', '/workspace/src/turtlebot3_description', '-DCMAKE_INSTALL_PREFIX=/workspace/install/turtlebot3_description'], 'cwd': '/workspace/build/turtlebot3_description', 'env': OrderedDict([('HOSTNAME', 'tuf'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models/'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/workspace/build/turtlebot3_description'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099892] (-) TimerEvent: {}
+[0.200258] (-) TimerEvent: {}
+[0.300471] (-) TimerEvent: {}
+[0.400717] (-) TimerEvent: {}
+[0.500978] (-) TimerEvent: {}
+[0.523718] (turtlebot3_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.523986] (turtlebot3_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.524031] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.524067] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.524102] (turtlebot3_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.524139] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.524172] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.524205] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.524238] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.524270] (turtlebot3_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.524304] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.524337] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.524370] (turtlebot3_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.524403] (turtlebot3_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.540539] (turtlebot3_description) StdoutLine: {'line': b'-- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)\n'}
+[0.601085] (-) TimerEvent: {}
+[0.640749] (turtlebot3_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.643333] (turtlebot3_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.644213] (turtlebot3_description) StdoutLine: {'line': b'-- Build files have been written to: /workspace/build/turtlebot3_description\n'}
+[0.683520] (turtlebot3_description) CommandEnded: {'returncode': 0}
+[0.683919] (turtlebot3_description) JobProgress: {'identifier': 'turtlebot3_description', 'progress': 'build'}
+[0.684330] (turtlebot3_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/turtlebot3_description', '--', '-j8', '-l8'], 'cwd': '/workspace/build/turtlebot3_description', 'env': OrderedDict([('HOSTNAME', 'tuf'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models/'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/workspace/build/turtlebot3_description'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.701197] (-) TimerEvent: {}
+[0.710314] (turtlebot3_description) CommandEnded: {'returncode': 0}
+[0.725247] (turtlebot3_description) JobProgress: {'identifier': 'turtlebot3_description', 'progress': 'install'}
+[0.731858] (turtlebot3_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/turtlebot3_description'], 'cwd': '/workspace/build/turtlebot3_description', 'env': OrderedDict([('HOSTNAME', 'tuf'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models/'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/workspace/build/turtlebot3_description'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.737408] (turtlebot3_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.737673] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes\n'}
+[0.737793] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/VLP16_scan.stl\n'}
+[0.737859] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels\n'}
+[0.737921] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/right_tire.stl\n'}
+[0.738309] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/left_tire.stl\n'}
+[0.739060] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/VLP16_base_1.dae\n'}
+[0.739283] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors\n'}
+[0.739386] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/lds.stl\n'}
+[0.739803] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.dae\n'}
+[0.739995] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.dae\n'}
+[0.745050] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.jpg\n'}
+[0.745267] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.jpg\n'}
+[0.745333] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/VLP16_base_2.dae\n'}
+[0.745422] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/HDL32E_base.stl\n'}
+[0.745505] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/VLP16_base_1.stl\n'}
+[0.745653] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/HDL32E_scan.dae\n'}
+[0.745903] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/VLP16_scan.dae\n'}
+[0.746004] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/HDL32E_base.dae\n'}
+[0.746149] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/bases\n'}
+[0.746233] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_pi_base.stl\n'}
+[0.750376] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/burger_base.stl\n'}
+[0.752963] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_base.stl\n'}
+[0.761512] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/HDL32E_scan.stl\n'}
+[0.761683] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/meshes/VLP16_base_2.stl\n'}
+[0.761790] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/rviz\n'}
+[0.761861] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/rviz/example.rviz\n'}
+[0.761957] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/rviz/model.rviz\n'}
+[0.762024] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/urdf\n'}
+[0.762117] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/urdf/HDL-32E.urdf.xacro\n'}
+[0.762182] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/urdf/VLP-16.urdf.xacro\n'}
+[0.762268] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle_pi.urdf\n'}
+[0.762359] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_velodyne_burger.urdf\n'}
+[0.762453] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/urdf/common_properties.urdf\n'}
+[0.762521] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle.urdf\n'}
+[0.762622] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/urdf/example.urdf.xacro\n'}
+[0.762688] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_burger.urdf\n'}
+[0.762795] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/ament_index/resource_index/package_run_dependencies/turtlebot3_description\n'}
+[0.762933] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/ament_index/resource_index/parent_prefix_path/turtlebot3_description\n'}
+[0.763059] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.sh\n'}
+[0.763167] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.dsv\n'}
+[0.763273] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/environment/path.sh\n'}
+[0.763375] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/environment/path.dsv\n'}
+[0.763472] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/local_setup.bash\n'}
+[0.763570] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/local_setup.sh\n'}
+[0.763680] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/local_setup.zsh\n'}
+[0.763782] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/local_setup.dsv\n'}
+[0.763877] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/package.dsv\n'}
+[0.764002] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/ament_index/resource_index/packages/turtlebot3_description\n'}
+[0.764115] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig.cmake\n'}
+[0.764203] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig-version.cmake\n'}
+[0.764299] (turtlebot3_description) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_description/share/turtlebot3_description/package.xml\n'}
+[0.765852] (turtlebot3_description) CommandEnded: {'returncode': 0}
+[0.801280] (-) TimerEvent: {}
+[0.813342] (turtlebot3_description) JobEnded: {'identifier': 'turtlebot3_description', 'rc': 0}
+[0.814371] (turtlebot3_gazebo) JobStarted: {'identifier': 'turtlebot3_gazebo'}
+[0.818647] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'cmake'}
+[0.819088] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/workspace/src/turtlebot3_simulations/turtlebot3_gazebo', '-DCMAKE_INSTALL_PREFIX=/workspace/install/turtlebot3_gazebo'], 'cwd': '/workspace/build/turtlebot3_gazebo', 'env': OrderedDict([('HOSTNAME', 'tuf'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models/'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/turtlebot3_description:/opt/ros/humble'), ('PWD', '/workspace/build/turtlebot3_gazebo'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/turtlebot3_description:/opt/ros/humble')]), 'shell': False}
+[0.857182] (turtlebot3_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.895119] (turtlebot3_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.900371] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.901354] (-) TimerEvent: {}
+[0.946299] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.954053] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.954275] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.954699] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.957959] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.001503] (-) TimerEvent: {}
+[1.021915] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.027411] (cartographer_slam) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/cartographer_slam', 'build', '--build-base', '/workspace/build/cartographer_slam/build', 'install', '--record', '/workspace/build/cartographer_slam/install.log', '--single-version-externally-managed'], 'cwd': '/workspace/src/cartographer_slam', 'env': {'HOSTNAME': 'tuf', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/workspace/src', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'xterm', 'GAZEBO_MODEL_PATH': '/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models/', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/workspace/build/cartographer_slam', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'C.UTF-8', 'RCUTILS_COLORIZED_OUTPUT': '1', 'PYTHONPATH': '/workspace/build/cartographer_slam/prefix_override:/workspace/install/cartographer_slam/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1'}, 'shell': False}
+[1.029380] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.029536] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.029807] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.032787] (map_server) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/map_server', 'build', '--build-base', '/workspace/build/map_server/build', 'install', '--record', '/workspace/build/map_server/install.log', '--single-version-externally-managed'], 'cwd': '/workspace/src/map_server', 'env': {'HOSTNAME': 'tuf', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/workspace/src', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'xterm', 'GAZEBO_MODEL_PATH': '/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models/', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/workspace/build/map_server', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'C.UTF-8', 'RCUTILS_COLORIZED_OUTPUT': '1', 'PYTHONPATH': '/workspace/build/map_server/prefix_override:/workspace/install/map_server/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1'}, 'shell': False}
+[1.034203] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.096374] (localization_server) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/localization_server', 'build', '--build-base', '/workspace/build/localization_server/build', 'install', '--record', '/workspace/build/localization_server/install.log', '--single-version-externally-managed'], 'cwd': '/workspace/src/localization_server', 'env': {'HOSTNAME': 'tuf', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/workspace/src', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'xterm', 'GAZEBO_MODEL_PATH': '/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models/', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/workspace/build/localization_server', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'C.UTF-8', 'RCUTILS_COLORIZED_OUTPUT': '1', 'PYTHONPATH': '/workspace/build/localization_server/prefix_override:/workspace/install/localization_server/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1'}, 'shell': False}
+[1.102007] (path_planner_server) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/path_planner_server', 'build', '--build-base', '/workspace/build/path_planner_server/build', 'install', '--record', '/workspace/build/path_planner_server/install.log', '--single-version-externally-managed'], 'cwd': '/workspace/src/path_planner_server', 'env': {'HOSTNAME': 'tuf', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/workspace/src', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'xterm', 'GAZEBO_MODEL_PATH': '/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models/', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/workspace/build/path_planner_server', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'C.UTF-8', 'RCUTILS_COLORIZED_OUTPUT': '1', 'PYTHONPATH': '/workspace/build/path_planner_server/prefix_override:/workspace/install/path_planner_server/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1'}, 'shell': False}
+[1.103569] (-) TimerEvent: {}
+[1.187809] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[1.201614] (cartographer_slam) StdoutLine: {'line': b'running egg_info\n'}
+[1.202150] (cartographer_slam) StdoutLine: {'line': b'creating ../../build/cartographer_slam/cartographer_slam.egg-info\n'}
+[1.202340] (cartographer_slam) StdoutLine: {'line': b'writing ../../build/cartographer_slam/cartographer_slam.egg-info/PKG-INFO\n'}
+[1.202516] (cartographer_slam) StdoutLine: {'line': b'writing dependency_links to ../../build/cartographer_slam/cartographer_slam.egg-info/dependency_links.txt\n'}
+[1.202635] (cartographer_slam) StdoutLine: {'line': b'writing entry points to ../../build/cartographer_slam/cartographer_slam.egg-info/entry_points.txt\n'}
+[1.202742] (cartographer_slam) StdoutLine: {'line': b'writing requirements to ../../build/cartographer_slam/cartographer_slam.egg-info/requires.txt\n'}
+[1.202837] (cartographer_slam) StdoutLine: {'line': b'writing top-level names to ../../build/cartographer_slam/cartographer_slam.egg-info/top_level.txt\n'}
+[1.202928] (cartographer_slam) StdoutLine: {'line': b"writing manifest file '../../build/cartographer_slam/cartographer_slam.egg-info/SOURCES.txt'\n"}
+[1.203624] (-) TimerEvent: {}
+[1.204168] (cartographer_slam) StdoutLine: {'line': b"reading manifest file '../../build/cartographer_slam/cartographer_slam.egg-info/SOURCES.txt'\n"}
+[1.204692] (cartographer_slam) StdoutLine: {'line': b"writing manifest file '../../build/cartographer_slam/cartographer_slam.egg-info/SOURCES.txt'\n"}
+[1.204836] (cartographer_slam) StdoutLine: {'line': b'running build\n'}
+[1.204951] (cartographer_slam) StdoutLine: {'line': b'running build_py\n'}
+[1.205079] (cartographer_slam) StdoutLine: {'line': b'creating /workspace/build/cartographer_slam/build\n'}
+[1.205159] (cartographer_slam) StdoutLine: {'line': b'creating /workspace/build/cartographer_slam/build/lib\n'}
+[1.205221] (cartographer_slam) StdoutLine: {'line': b'creating /workspace/build/cartographer_slam/build/lib/cartographer_slam\n'}
+[1.205282] (cartographer_slam) StdoutLine: {'line': b'copying cartographer_slam/__init__.py -> /workspace/build/cartographer_slam/build/lib/cartographer_slam\n'}
+[1.205369] (cartographer_slam) StdoutLine: {'line': b'running install\n'}
+[1.205451] (cartographer_slam) StdoutLine: {'line': b'running install_lib\n'}
+[1.206039] (cartographer_slam) StdoutLine: {'line': b'creating /workspace/install/cartographer_slam/lib/python3.10/site-packages/cartographer_slam\n'}
+[1.206187] (cartographer_slam) StdoutLine: {'line': b'copying /workspace/build/cartographer_slam/build/lib/cartographer_slam/__init__.py -> /workspace/install/cartographer_slam/lib/python3.10/site-packages/cartographer_slam\n'}
+[1.206517] (cartographer_slam) StdoutLine: {'line': b'byte-compiling /workspace/install/cartographer_slam/lib/python3.10/site-packages/cartographer_slam/__init__.py to __init__.cpython-310.pyc\n'}
+[1.206658] (cartographer_slam) StdoutLine: {'line': b'running install_data\n'}
+[1.206974] (cartographer_slam) StdoutLine: {'line': b'creating /workspace/install/cartographer_slam/share/ament_index\n'}
+[1.207090] (cartographer_slam) StdoutLine: {'line': b'creating /workspace/install/cartographer_slam/share/ament_index/resource_index\n'}
+[1.207213] (cartographer_slam) StdoutLine: {'line': b'creating /workspace/install/cartographer_slam/share/ament_index/resource_index/packages\n'}
+[1.207286] (cartographer_slam) StdoutLine: {'line': b'copying resource/cartographer_slam -> /workspace/install/cartographer_slam/share/ament_index/resource_index/packages\n'}
+[1.207355] (cartographer_slam) StdoutLine: {'line': b'copying package.xml -> /workspace/install/cartographer_slam/share/cartographer_slam\n'}
+[1.207427] (cartographer_slam) StdoutLine: {'line': b'creating /workspace/install/cartographer_slam/share/cartographer_slam/launch\n'}
+[1.207498] (cartographer_slam) StdoutLine: {'line': b'copying launch/start_rviz.launch.py -> /workspace/install/cartographer_slam/share/cartographer_slam/launch\n'}
+[1.207625] (cartographer_slam) StdoutLine: {'line': b'copying launch/cartographer.launch.py -> /workspace/install/cartographer_slam/share/cartographer_slam/launch\n'}
+[1.207718] (cartographer_slam) StdoutLine: {'line': b'copying launch/multi_cartographer.launch.py -> /workspace/install/cartographer_slam/share/cartographer_slam/launch\n'}
+[1.207790] (cartographer_slam) StdoutLine: {'line': b'creating /workspace/install/cartographer_slam/share/cartographer_slam/config\n'}
+[1.207854] (cartographer_slam) StdoutLine: {'line': b'copying config/turtlebot_area.pgm -> /workspace/install/cartographer_slam/share/cartographer_slam/config\n'}
+[1.207916] (cartographer_slam) StdoutLine: {'line': b'copying config/cartographer_multi.lua -> /workspace/install/cartographer_slam/share/cartographer_slam/config\n'}
+[1.207977] (cartographer_slam) StdoutLine: {'line': b'copying config/turtlebot_area.yaml -> /workspace/install/cartographer_slam/share/cartographer_slam/config\n'}
+[1.208038] (cartographer_slam) StdoutLine: {'line': b'copying config/cartographer.lua -> /workspace/install/cartographer_slam/share/cartographer_slam/config\n'}
+[1.208103] (cartographer_slam) StdoutLine: {'line': b'creating /workspace/install/cartographer_slam/share/cartographer_slam/rviz\n'}
+[1.208169] (cartographer_slam) StdoutLine: {'line': b'copying rviz/tb3_1_and_2.rviz -> /workspace/install/cartographer_slam/share/cartographer_slam/rviz\n'}
+[1.208260] (cartographer_slam) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.208842] (cartographer_slam) StdoutLine: {'line': b'Copying ../../build/cartographer_slam/cartographer_slam.egg-info to /workspace/install/cartographer_slam/lib/python3.10/site-packages/cartographer_slam-0.0.0-py3.10.egg-info\n'}
+[1.209337] (cartographer_slam) StdoutLine: {'line': b'running install_scripts\n'}
+[1.211546] (map_server) StdoutLine: {'line': b'running egg_info\n'}
+[1.212024] (map_server) StdoutLine: {'line': b'creating ../../build/map_server/map_server.egg-info\n'}
+[1.212198] (map_server) StdoutLine: {'line': b'writing ../../build/map_server/map_server.egg-info/PKG-INFO\n'}
+[1.212389] (map_server) StdoutLine: {'line': b'writing dependency_links to ../../build/map_server/map_server.egg-info/dependency_links.txt\n'}
+[1.212526] (map_server) StdoutLine: {'line': b'writing entry points to ../../build/map_server/map_server.egg-info/entry_points.txt\n'}
+[1.212630] (map_server) StdoutLine: {'line': b'writing requirements to ../../build/map_server/map_server.egg-info/requires.txt\n'}
+[1.212725] (map_server) StdoutLine: {'line': b'writing top-level names to ../../build/map_server/map_server.egg-info/top_level.txt\n'}
+[1.212822] (map_server) StdoutLine: {'line': b"writing manifest file '../../build/map_server/map_server.egg-info/SOURCES.txt'\n"}
+[1.214049] (map_server) StdoutLine: {'line': b"reading manifest file '../../build/map_server/map_server.egg-info/SOURCES.txt'\n"}
+[1.214501] (map_server) StdoutLine: {'line': b"writing manifest file '../../build/map_server/map_server.egg-info/SOURCES.txt'\n"}
+[1.214629] (map_server) StdoutLine: {'line': b'running build\n'}
+[1.214741] (map_server) StdoutLine: {'line': b'running build_py\n'}
+[1.214817] (map_server) StdoutLine: {'line': b'creating /workspace/build/map_server/build\n'}
+[1.214914] (map_server) StdoutLine: {'line': b'creating /workspace/build/map_server/build/lib\n'}
+[1.215021] (map_server) StdoutLine: {'line': b'creating /workspace/build/map_server/build/lib/map_server\n'}
+[1.215085] (map_server) StdoutLine: {'line': b'copying map_server/__init__.py -> /workspace/build/map_server/build/lib/map_server\n'}
+[1.215147] (map_server) StdoutLine: {'line': b'running install\n'}
+[1.215232] (map_server) StdoutLine: {'line': b'running install_lib\n'}
+[1.215566] (map_server) StdoutLine: {'line': b'creating /workspace/install/map_server/lib/python3.10/site-packages/map_server\n'}
+[1.215659] (map_server) StdoutLine: {'line': b'copying /workspace/build/map_server/build/lib/map_server/__init__.py -> /workspace/install/map_server/lib/python3.10/site-packages/map_server\n'}
+[1.215929] (map_server) StdoutLine: {'line': b'byte-compiling /workspace/install/map_server/lib/python3.10/site-packages/map_server/__init__.py to __init__.cpython-310.pyc\n'}
+[1.216050] (map_server) StdoutLine: {'line': b'running install_data\n'}
+[1.216330] (map_server) StdoutLine: {'line': b'creating /workspace/install/map_server/share/ament_index\n'}
+[1.216441] (map_server) StdoutLine: {'line': b'creating /workspace/install/map_server/share/ament_index/resource_index\n'}
+[1.216549] (map_server) StdoutLine: {'line': b'creating /workspace/install/map_server/share/ament_index/resource_index/packages\n'}
+[1.216653] (map_server) StdoutLine: {'line': b'copying resource/map_server -> /workspace/install/map_server/share/ament_index/resource_index/packages\n'}
+[1.216725] (map_server) StdoutLine: {'line': b'copying package.xml -> /workspace/install/map_server/share/map_server\n'}
+[1.216792] (map_server) StdoutLine: {'line': b'creating /workspace/install/map_server/share/map_server/launch\n'}
+[1.216856] (map_server) StdoutLine: {'line': b'copying launch/nav2_map_server.launch.py -> /workspace/install/map_server/share/map_server/launch\n'}
+[1.216920] (map_server) StdoutLine: {'line': b'creating /workspace/install/map_server/share/map_server/config\n'}
+[1.217004] (map_server) StdoutLine: {'line': b'copying config/turtlebot_area_two_robots.pgm -> /workspace/install/map_server/share/map_server/config\n'}
+[1.217104] (map_server) StdoutLine: {'line': b'copying config/turtlebot_area_two_robots.yaml -> /workspace/install/map_server/share/map_server/config\n'}
+[1.217173] (map_server) StdoutLine: {'line': b'copying config/turtlebot_area_two_robots_clean.pgm -> /workspace/install/map_server/share/map_server/config\n'}
+[1.217233] (map_server) StdoutLine: {'line': b'copying config/turtlebot_area_two_robots_clean.yaml -> /workspace/install/map_server/share/map_server/config\n'}
+[1.217292] (map_server) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.217915] (map_server) StdoutLine: {'line': b'Copying ../../build/map_server/map_server.egg-info to /workspace/install/map_server/lib/python3.10/site-packages/map_server-0.0.0-py3.10.egg-info\n'}
+[1.218345] (map_server) StdoutLine: {'line': b'running install_scripts\n'}
+[1.225346] (cartographer_slam) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/cartographer_slam/install.log'\n"}
+[1.233897] (map_server) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/map_server/install.log'\n"}
+[1.251081] (cartographer_slam) CommandEnded: {'returncode': 0}
+[1.257526] (cartographer_slam) JobEnded: {'identifier': 'cartographer_slam', 'rc': 0}
+[1.260888] (map_server) CommandEnded: {'returncode': 0}
+[1.268813] (map_server) JobEnded: {'identifier': 'map_server', 'rc': 0}
+[1.293502] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.293668] (turtlebot3_gazebo) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PkgConfig)\n'}
+[1.293713] (turtlebot3_gazebo) StderrLine: {'line': b'  does not match the name of the calling package (gazebo).  This can lead to\n'}
+[1.293750] (turtlebot3_gazebo) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.293783] (turtlebot3_gazebo) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.293816] (turtlebot3_gazebo) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.293848] (turtlebot3_gazebo) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)\n'}
+[1.293881] (turtlebot3_gazebo) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)\n'}
+[1.293912] (turtlebot3_gazebo) StderrLine: {'line': b'  CMakeLists.txt:23 (find_package)\n'}
+[1.293944] (turtlebot3_gazebo) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.293975] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[1.294007] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.297379] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.302102] (localization_server) StdoutLine: {'line': b'running egg_info\n'}
+[1.302255] (path_planner_server) StdoutLine: {'line': b'running egg_info\n'}
+[1.302527] (localization_server) StdoutLine: {'line': b'creating ../../build/localization_server/localization_server.egg-info\n'}
+[1.302677] (path_planner_server) StdoutLine: {'line': b'creating ../../build/path_planner_server/path_planner_server.egg-info\n'}
+[1.302721] (localization_server) StdoutLine: {'line': b'writing ../../build/localization_server/localization_server.egg-info/PKG-INFO\n'}
+[1.302791] (localization_server) StdoutLine: {'line': b'writing dependency_links to ../../build/localization_server/localization_server.egg-info/dependency_links.txt\n'}
+[1.302868] (path_planner_server) StdoutLine: {'line': b'writing ../../build/path_planner_server/path_planner_server.egg-info/PKG-INFO\n'}
+[1.302910] (localization_server) StdoutLine: {'line': b'writing entry points to ../../build/localization_server/localization_server.egg-info/entry_points.txt\n'}
+[1.302972] (localization_server) StdoutLine: {'line': b'writing requirements to ../../build/localization_server/localization_server.egg-info/requires.txt\n'}
+[1.303058] (path_planner_server) StdoutLine: {'line': b'writing dependency_links to ../../build/path_planner_server/path_planner_server.egg-info/dependency_links.txt\n'}
+[1.303112] (localization_server) StdoutLine: {'line': b'writing top-level names to ../../build/localization_server/localization_server.egg-info/top_level.txt\n'}
+[1.303147] (localization_server) StdoutLine: {'line': b"writing manifest file '../../build/localization_server/localization_server.egg-info/SOURCES.txt'\n"}
+[1.303184] (path_planner_server) StdoutLine: {'line': b'writing entry points to ../../build/path_planner_server/path_planner_server.egg-info/entry_points.txt\n'}
+[1.303242] (path_planner_server) StdoutLine: {'line': b'writing requirements to ../../build/path_planner_server/path_planner_server.egg-info/requires.txt\n'}
+[1.303298] (path_planner_server) StdoutLine: {'line': b'writing top-level names to ../../build/path_planner_server/path_planner_server.egg-info/top_level.txt\n'}
+[1.303377] (path_planner_server) StdoutLine: {'line': b"writing manifest file '../../build/path_planner_server/path_planner_server.egg-info/SOURCES.txt'\n"}
+[1.303693] (-) TimerEvent: {}
+[1.304292] (localization_server) StdoutLine: {'line': b"reading manifest file '../../build/localization_server/localization_server.egg-info/SOURCES.txt'\n"}
+[1.304835] (localization_server) StdoutLine: {'line': b"writing manifest file '../../build/localization_server/localization_server.egg-info/SOURCES.txt'\n"}
+[1.304968] (localization_server) StdoutLine: {'line': b'running build\n'}
+[1.305035] (localization_server) StdoutLine: {'line': b'running build_py\n'}
+[1.305162] (localization_server) StdoutLine: {'line': b'creating /workspace/build/localization_server/build\n'}
+[1.305266] (localization_server) StdoutLine: {'line': b'creating /workspace/build/localization_server/build/lib\n'}
+[1.305337] (localization_server) StdoutLine: {'line': b'creating /workspace/build/localization_server/build/lib/localization_server\n'}
+[1.305404] (path_planner_server) StdoutLine: {'line': b"reading manifest file '../../build/path_planner_server/path_planner_server.egg-info/SOURCES.txt'\n"}
+[1.305488] (localization_server) StdoutLine: {'line': b'copying localization_server/initial_pose_pub.py -> /workspace/build/localization_server/build/lib/localization_server\n'}
+[1.305550] (localization_server) StdoutLine: {'line': b'copying localization_server/__init__.py -> /workspace/build/localization_server/build/lib/localization_server\n'}
+[1.305629] (localization_server) StdoutLine: {'line': b'running install\n'}
+[1.305685] (localization_server) StdoutLine: {'line': b'running install_lib\n'}
+[1.305916] (path_planner_server) StdoutLine: {'line': b"writing manifest file '../../build/path_planner_server/path_planner_server.egg-info/SOURCES.txt'\n"}
+[1.306041] (path_planner_server) StdoutLine: {'line': b'running build\n'}
+[1.306104] (path_planner_server) StdoutLine: {'line': b'running build_py\n'}
+[1.306183] (localization_server) StdoutLine: {'line': b'creating /workspace/install/localization_server/lib/python3.10/site-packages/localization_server\n'}
+[1.306301] (localization_server) StdoutLine: {'line': b'copying /workspace/build/localization_server/build/lib/localization_server/initial_pose_pub.py -> /workspace/install/localization_server/lib/python3.10/site-packages/localization_server\n'}
+[1.306365] (localization_server) StdoutLine: {'line': b'copying /workspace/build/localization_server/build/lib/localization_server/__init__.py -> /workspace/install/localization_server/lib/python3.10/site-packages/localization_server\n'}
+[1.306429] (path_planner_server) StdoutLine: {'line': b'creating /workspace/build/path_planner_server/build\n'}
+[1.306491] (path_planner_server) StdoutLine: {'line': b'creating /workspace/build/path_planner_server/build/lib\n'}
+[1.306550] (path_planner_server) StdoutLine: {'line': b'creating /workspace/build/path_planner_server/build/lib/path_planner_server\n'}
+[1.306613] (path_planner_server) StdoutLine: {'line': b'copying path_planner_server/nav_to_pose_action_client.py -> /workspace/build/path_planner_server/build/lib/path_planner_server\n'}
+[1.306715] (path_planner_server) StdoutLine: {'line': b'copying path_planner_server/__init__.py -> /workspace/build/path_planner_server/build/lib/path_planner_server\n'}
+[1.306775] (localization_server) StdoutLine: {'line': b'byte-compiling /workspace/install/localization_server/lib/python3.10/site-packages/localization_server/initial_pose_pub.py to initial_pose_pub.cpython-310.pyc\n'}
+[1.306836] (path_planner_server) StdoutLine: {'line': b'running install\n'}
+[1.306894] (path_planner_server) StdoutLine: {'line': b'running install_lib\n'}
+[1.306974] (localization_server) StdoutLine: {'line': b'byte-compiling /workspace/install/localization_server/lib/python3.10/site-packages/localization_server/__init__.py to __init__.cpython-310.pyc\n'}
+[1.307036] (localization_server) StdoutLine: {'line': b'running install_data\n'}
+[1.307128] (path_planner_server) StdoutLine: {'line': b'creating /workspace/install/path_planner_server/lib/python3.10/site-packages/path_planner_server\n'}
+[1.307175] (path_planner_server) StdoutLine: {'line': b'copying /workspace/build/path_planner_server/build/lib/path_planner_server/nav_to_pose_action_client.py -> /workspace/install/path_planner_server/lib/python3.10/site-packages/path_planner_server\n'}
+[1.307235] (path_planner_server) StdoutLine: {'line': b'copying /workspace/build/path_planner_server/build/lib/path_planner_server/__init__.py -> /workspace/install/path_planner_server/lib/python3.10/site-packages/path_planner_server\n'}
+[1.307284] (localization_server) StdoutLine: {'line': b'creating /workspace/install/localization_server/share/ament_index\n'}
+[1.307340] (localization_server) StdoutLine: {'line': b'creating /workspace/install/localization_server/share/ament_index/resource_index\n'}
+[1.307387] (localization_server) StdoutLine: {'line': b'creating /workspace/install/localization_server/share/ament_index/resource_index/packages\n'}
+[1.307423] (localization_server) StdoutLine: {'line': b'copying resource/localization_server -> /workspace/install/localization_server/share/ament_index/resource_index/packages\n'}
+[1.307499] (localization_server) StdoutLine: {'line': b'copying package.xml -> /workspace/install/localization_server/share/localization_server\n'}
+[1.307561] (localization_server) StdoutLine: {'line': b'creating /workspace/install/localization_server/share/localization_server/launch\n'}
+[1.307657] (localization_server) StdoutLine: {'line': b'copying launch/multi_localization.launch.py -> /workspace/install/localization_server/share/localization_server/launch\n'}
+[1.307736] (path_planner_server) StdoutLine: {'line': b'byte-compiling /workspace/install/path_planner_server/lib/python3.10/site-packages/path_planner_server/nav_to_pose_action_client.py to nav_to_pose_action_client.cpython-310.pyc\n'}
+[1.307778] (localization_server) StdoutLine: {'line': b'copying launch/localization.launch.py -> /workspace/install/localization_server/share/localization_server/launch\n'}
+[1.307813] (localization_server) StdoutLine: {'line': b'copying launch/init_robot.launch.py -> /workspace/install/localization_server/share/localization_server/launch\n'}
+[1.307849] (localization_server) StdoutLine: {'line': b'creating /workspace/install/localization_server/share/localization_server/config\n'}
+[1.307888] (localization_server) StdoutLine: {'line': b'copying config/turtlebot_area.pgm -> /workspace/install/localization_server/share/localization_server/config\n'}
+[1.307966] (path_planner_server) StdoutLine: {'line': b'byte-compiling /workspace/install/path_planner_server/lib/python3.10/site-packages/path_planner_server/__init__.py to __init__.cpython-310.pyc\n'}
+[1.308004] (localization_server) StdoutLine: {'line': b'copying config/turtlebot_area.yaml -> /workspace/install/localization_server/share/localization_server/config\n'}
+[1.308040] (localization_server) StdoutLine: {'line': b'copying config/amcl_config.yaml -> /workspace/install/localization_server/share/localization_server/config\n'}
+[1.308093] (localization_server) StdoutLine: {'line': b'copying config/amcl_config_initialized.yaml -> /workspace/install/localization_server/share/localization_server/config\n'}
+[1.308130] (localization_server) StdoutLine: {'line': b'copying config/tb3_0_amcl_config.yaml -> /workspace/install/localization_server/share/localization_server/config\n'}
+[1.308163] (localization_server) StdoutLine: {'line': b'copying config/tb3_1_amcl_config.yaml -> /workspace/install/localization_server/share/localization_server/config\n'}
+[1.308196] (localization_server) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.308229] (path_planner_server) StdoutLine: {'line': b'running install_data\n'}
+[1.308453] (path_planner_server) StdoutLine: {'line': b'creating /workspace/install/path_planner_server/share/ament_index\n'}
+[1.308517] (path_planner_server) StdoutLine: {'line': b'creating /workspace/install/path_planner_server/share/ament_index/resource_index\n'}
+[1.308557] (path_planner_server) StdoutLine: {'line': b'creating /workspace/install/path_planner_server/share/ament_index/resource_index/packages\n'}
+[1.308617] (path_planner_server) StdoutLine: {'line': b'copying resource/path_planner_server -> /workspace/install/path_planner_server/share/ament_index/resource_index/packages\n'}
+[1.308675] (path_planner_server) StdoutLine: {'line': b'copying package.xml -> /workspace/install/path_planner_server/share/path_planner_server\n'}
+[1.308730] (path_planner_server) StdoutLine: {'line': b'creating /workspace/install/path_planner_server/share/path_planner_server/launch\n'}
+[1.308785] (path_planner_server) StdoutLine: {'line': b'copying launch/cartographer-navigation.launch.py -> /workspace/install/path_planner_server/share/path_planner_server/launch\n'}
+[1.308856] (path_planner_server) StdoutLine: {'line': b'copying launch/navigation.launch.py -> /workspace/install/path_planner_server/share/path_planner_server/launch\n'}
+[1.308893] (path_planner_server) StdoutLine: {'line': b'copying launch/multi_pathplanner.launch.py -> /workspace/install/path_planner_server/share/path_planner_server/launch\n'}
+[1.308929] (path_planner_server) StdoutLine: {'line': b'copying launch/pathplanner.launch.py -> /workspace/install/path_planner_server/share/path_planner_server/launch\n'}
+[1.308983] (path_planner_server) StdoutLine: {'line': b'copying launch/multi_main.launch.xml -> /workspace/install/path_planner_server/share/path_planner_server/launch\n'}
+[1.309048] (path_planner_server) StdoutLine: {'line': b'creating /workspace/install/path_planner_server/share/path_planner_server/config\n'}
+[1.309101] (path_planner_server) StdoutLine: {'line': b'copying config/controller.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config\n'}
+[1.309140] (path_planner_server) StdoutLine: {'line': b'copying config/tb3_1_bt_navigator.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config\n'}
+[1.309198] (path_planner_server) StdoutLine: {'line': b'copying config/behavior.xml -> /workspace/install/path_planner_server/share/path_planner_server/config\n'}
+[1.309251] (localization_server) StdoutLine: {'line': b'Copying ../../build/localization_server/localization_server.egg-info to /workspace/install/localization_server/lib/python3.10/site-packages/localization_server-0.0.0-py3.10.egg-info\n'}
+[1.309334] (path_planner_server) StdoutLine: {'line': b'copying config/tb3_1_recovery.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config\n'}
+[1.309421] (path_planner_server) StdoutLine: {'line': b'copying config/tb3_0_recovery.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config\n'}
+[1.309466] (path_planner_server) StdoutLine: {'line': b'copying config/planner_server.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config\n'}
+[1.309502] (path_planner_server) StdoutLine: {'line': b'copying config/recovery.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config\n'}
+[1.309574] (path_planner_server) StdoutLine: {'line': b'copying config/tb3_1_planner_server.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config\n'}
+[1.309618] (path_planner_server) StdoutLine: {'line': b'copying config/bt_navigator.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config\n'}
+[1.309655] (path_planner_server) StdoutLine: {'line': b'copying config/tb3_0_controller.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config\n'}
+[1.309693] (path_planner_server) StdoutLine: {'line': b'copying config/tb3_1_controller.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config\n'}
+[1.309732] (path_planner_server) StdoutLine: {'line': b'copying config/tb3_0_planner_server.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config\n'}
+[1.309805] (path_planner_server) StdoutLine: {'line': b'copying config/tb3_0_bt_navigator.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config\n'}
+[1.309863] (path_planner_server) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.309896] (localization_server) StdoutLine: {'line': b'running install_scripts\n'}
+[1.310776] (path_planner_server) StdoutLine: {'line': b'Copying ../../build/path_planner_server/path_planner_server.egg-info to /workspace/install/path_planner_server/lib/python3.10/site-packages/path_planner_server-0.0.0-py3.10.egg-info\n'}
+[1.311190] (path_planner_server) StdoutLine: {'line': b'running install_scripts\n'}
+[1.311284] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[1.323297] (localization_server) StdoutLine: {'line': b'Installing initial_pose_pub script to /workspace/install/localization_server/lib/localization_server\n'}
+[1.323619] (localization_server) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/localization_server/install.log'\n"}
+[1.324632] (path_planner_server) StdoutLine: {'line': b'Installing nav_to_pose script to /workspace/install/path_planner_server/lib/path_planner_server\n'}
+[1.324976] (path_planner_server) StdoutLine: {'line': b"writing list of installed files to '/workspace/build/path_planner_server/install.log'\n"}
+[1.350492] (localization_server) CommandEnded: {'returncode': 0}
+[1.355078] (localization_server) JobEnded: {'identifier': 'localization_server', 'rc': 0}
+[1.356829] (path_planner_server) CommandEnded: {'returncode': 0}
+[1.360963] (path_planner_server) JobEnded: {'identifier': 'path_planner_server', 'rc': 0}
+[1.387699] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[1.403813] (-) TimerEvent: {}
+[1.450294] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[1.477794] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.503904] (-) TimerEvent: {}
+[1.604165] (-) TimerEvent: {}
+[1.618042] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[1.637687] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.643475] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[1.650949] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.654171] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.654354] (turtlebot3_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[1.657455] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[1.664993] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[1.689658] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.700728] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.704228] (-) TimerEvent: {}
+[1.707063] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.709769] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.709862] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.712311] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.712376] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.714683] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.714775] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.717384] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.717470] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.719651] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.719729] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.722187] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.774674] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[1.777121] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[1.777319] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.791768] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.801687] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.804306] (-) TimerEvent: {}
+[1.804559] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.813849] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.835284] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.839369] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.847404] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.875442] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.880079] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.880551] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[1.896172] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[1.899299] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.904420] (-) TimerEvent: {}
+[1.906565] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[1.926865] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.930155] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.930390] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[1.930894] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.931551] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.932587] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[1.941148] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[1.941771] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[1.944198] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[1.944382] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[1.944618] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[1.947782] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[1.948008] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[1.995316] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[2.002226] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[2.004510] (-) TimerEvent: {}
+[2.009737] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[2.030176] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[2.035693] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[2.043841] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[2.073612] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[2.074134] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.074748] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.12.0\n'}
+[2.075332] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.083200] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)\n'}
+[2.085926] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.104604] (-) TimerEvent: {}
+[2.125916] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.131355] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.140753] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.155441] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.172051] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.204670] (-) TimerEvent: {}
+[2.257381] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[2.304741] (-) TimerEvent: {}
+[2.315236] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.368716] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.372119] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.404833] (-) TimerEvent: {}
+[2.448371] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.468885] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.504353] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.504912] (-) TimerEvent: {}
+[2.514315] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.605069] (-) TimerEvent: {}
+[2.605336] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.664360] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found tf2: 0.25.2 (/opt/ros/humble/share/tf2/cmake)\n'}
+[2.705183] (-) TimerEvent: {}
+[2.716650] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.754445] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[2.755800] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /workspace/build/turtlebot3_gazebo\n'}
+[2.764252] (turtlebot3_gazebo) CommandEnded: {'returncode': 0}
+[2.764745] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'build'}
+[2.764998] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/turtlebot3_gazebo', '--', '-j8', '-l8'], 'cwd': '/workspace/build/turtlebot3_gazebo', 'env': OrderedDict([('HOSTNAME', 'tuf'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models/'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/turtlebot3_description:/opt/ros/humble'), ('PWD', '/workspace/build/turtlebot3_gazebo'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/turtlebot3_description:/opt/ros/humble')]), 'shell': False}
+[2.798353] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/obstacle1.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o\x1b[0m\n'}
+[2.798553] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.o\x1b[0m\n'}
+[2.798621] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o\x1b[0m\n'}
+[2.798675] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o\x1b[0m\n'}
+[2.805279] (-) TimerEvent: {}
+[2.905533] (-) TimerEvent: {}
+[3.005791] (-) TimerEvent: {}
+[3.106089] (-) TimerEvent: {}
+[3.206462] (-) TimerEvent: {}
+[3.306870] (-) TimerEvent: {}
+[3.407216] (-) TimerEvent: {}
+[3.507654] (-) TimerEvent: {}
+[3.608072] (-) TimerEvent: {}
+[3.708398] (-) TimerEvent: {}
+[3.808779] (-) TimerEvent: {}
+[3.909106] (-) TimerEvent: {}
+[4.009478] (-) TimerEvent: {}
+[4.109803] (-) TimerEvent: {}
+[4.210283] (-) TimerEvent: {}
+[4.310693] (-) TimerEvent: {}
+[4.411154] (-) TimerEvent: {}
+[4.511511] (-) TimerEvent: {}
+[4.611888] (-) TimerEvent: {}
+[4.712191] (-) TimerEvent: {}
+[4.812633] (-) TimerEvent: {}
+[4.913037] (-) TimerEvent: {}
+[5.013403] (-) TimerEvent: {}
+[5.113804] (-) TimerEvent: {}
+[5.214169] (-) TimerEvent: {}
+[5.314556] (-) TimerEvent: {}
+[5.414949] (-) TimerEvent: {}
+[5.515300] (-) TimerEvent: {}
+[5.615647] (-) TimerEvent: {}
+[5.716000] (-) TimerEvent: {}
+[5.816381] (-) TimerEvent: {}
+[5.916770] (-) TimerEvent: {}
+[6.017146] (-) TimerEvent: {}
+[6.117627] (-) TimerEvent: {}
+[6.218017] (-) TimerEvent: {}
+[6.318385] (-) TimerEvent: {}
+[6.418741] (-) TimerEvent: {}
+[6.519098] (-) TimerEvent: {}
+[6.619451] (-) TimerEvent: {}
+[6.719817] (-) TimerEvent: {}
+[6.820174] (-) TimerEvent: {}
+[6.920515] (-) TimerEvent: {}
+[7.020872] (-) TimerEvent: {}
+[7.121207] (-) TimerEvent: {}
+[7.221558] (-) TimerEvent: {}
+[7.321909] (-) TimerEvent: {}
+[7.422281] (-) TimerEvent: {}
+[7.522664] (-) TimerEvent: {}
+[7.623027] (-) TimerEvent: {}
+[7.723409] (-) TimerEvent: {}
+[7.823804] (-) TimerEvent: {}
+[7.924169] (-) TimerEvent: {}
+[8.024627] (-) TimerEvent: {}
+[8.125217] (-) TimerEvent: {}
+[8.225706] (-) TimerEvent: {}
+[8.326085] (-) TimerEvent: {}
+[8.426470] (-) TimerEvent: {}
+[8.526806] (-) TimerEvent: {}
+[8.627132] (-) TimerEvent: {}
+[8.727465] (-) TimerEvent: {}
+[8.827815] (-) TimerEvent: {}
+[8.928145] (-) TimerEvent: {}
+[9.028492] (-) TimerEvent: {}
+[9.128851] (-) TimerEvent: {}
+[9.229205] (-) TimerEvent: {}
+[9.329544] (-) TimerEvent: {}
+[9.429905] (-) TimerEvent: {}
+[9.530249] (-) TimerEvent: {}
+[9.630602] (-) TimerEvent: {}
+[9.730956] (-) TimerEvent: {}
+[9.831317] (-) TimerEvent: {}
+[9.931660] (-) TimerEvent: {}
+[10.032005] (-) TimerEvent: {}
+[10.132349] (-) TimerEvent: {}
+[10.232699] (-) TimerEvent: {}
+[10.333087] (-) TimerEvent: {}
+[10.433472] (-) TimerEvent: {}
+[10.533861] (-) TimerEvent: {}
+[10.634284] (-) TimerEvent: {}
+[10.734720] (-) TimerEvent: {}
+[10.835096] (-) TimerEvent: {}
+[10.935484] (-) TimerEvent: {}
+[11.035855] (-) TimerEvent: {}
+[11.136229] (-) TimerEvent: {}
+[11.236658] (-) TimerEvent: {}
+[11.337038] (-) TimerEvent: {}
+[11.437386] (-) TimerEvent: {}
+[11.537716] (-) TimerEvent: {}
+[11.638041] (-) TimerEvent: {}
+[11.738358] (-) TimerEvent: {}
+[11.838684] (-) TimerEvent: {}
+[11.939006] (-) TimerEvent: {}
+[12.039371] (-) TimerEvent: {}
+[12.139810] (-) TimerEvent: {}
+[12.165342] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libobstacles.so\x1b[0m\n'}
+[12.207868] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libobstacle1.so\x1b[0m\n'}
+[12.213268] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libobstacle2.so\x1b[0m\n'}
+[12.239907] (-) TimerEvent: {}
+[12.263387] (turtlebot3_gazebo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable turtlebot3_drive\x1b[0m\n'}
+[12.340134] (-) TimerEvent: {}
+[12.440784] (-) TimerEvent: {}
+[12.483146] (turtlebot3_gazebo) StdoutLine: {'line': b'[100%] Built target obstacle1\n'}
+[12.489979] (turtlebot3_gazebo) StdoutLine: {'line': b'[100%] Built target obstacles\n'}
+[12.491801] (turtlebot3_gazebo) StdoutLine: {'line': b'[100%] Built target obstacle2\n'}
+[12.540838] (-) TimerEvent: {}
+[12.641109] (-) TimerEvent: {}
+[12.741396] (-) TimerEvent: {}
+[12.841688] (-) TimerEvent: {}
+[12.850560] (turtlebot3_gazebo) StdoutLine: {'line': b'[100%] Built target turtlebot3_drive\n'}
+[12.859939] (turtlebot3_gazebo) CommandEnded: {'returncode': 0}
+[12.884792] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'install'}
+[12.885349] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/turtlebot3_gazebo'], 'cwd': '/workspace/build/turtlebot3_gazebo', 'env': OrderedDict([('HOSTNAME', 'tuf'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models/'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/turtlebot3_description:/opt/ros/humble'), ('PWD', '/workspace/build/turtlebot3_gazebo'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/turtlebot3_description:/opt/ros/humble')]), 'shell': False}
+[12.891272] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.891358] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive\n'}
+[12.894170] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Set runtime path of "/workspace/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive" to ""\n'}
+[12.894217] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch\n'}
+[12.894270] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/multi_turtlebot3_world.launch.py\n'}
+[12.894308] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_velodyne_burger.launch.py\n'}
+[12.894360] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py\n'}
+[12.894396] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/multi_turtlebot3_velodyne_world.launch.py\n'}
+[12.894446] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_burger.launch.py\n'}
+[12.894481] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models\n'}
+[12.894532] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world\n'}
+[12.894576] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf\n'}
+[12.894624] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf\n'}
+[12.894657] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config\n'}
+[12.894703] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes\n'}
+[12.894750] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae\n'}
+[12.894797] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae\n'}
+[12.894844] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1\n'}
+[12.894892] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes_dae\n'}
+[12.894925] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes_dae/burger_base.dae\n'}
+[12.900258] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes_dae/right_tire.dae\n'}
+[12.901768] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes_dae/left_tire.dae\n'}
+[12.903497] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes_dae/lds.dae\n'}
+[12.904262] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/model.sdf\n'}
+[12.904329] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/model.config\n'}
+[12.904366] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes\n'}
+[12.904398] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes/lds.stl\n'}
+[12.904673] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes/burger_base.stl\n'}
+[12.907107] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes/right_tire.stl\n'}
+[12.907517] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes/left_tire.stl\n'}
+[12.908182] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world\n'}
+[12.908251] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1\n'}
+[12.908291] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf\n'}
+[12.908340] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config\n'}
+[12.908375] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin\n'}
+[12.908408] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc\n'}
+[12.908442] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt\n'}
+[12.908475] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc\n'}
+[12.908535] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc\n'}
+[12.908578] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf\n'}
+[12.908639] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles\n'}
+[12.908703] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf\n'}
+[12.908738] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config\n'}
+[12.908770] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2\n'}
+[12.908803] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf\n'}
+[12.908836] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config\n'}
+[12.908868] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box\n'}
+[12.908924] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf\n'}
+[12.908967] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config\n'}
+[12.909001] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config\n'}
+[12.909034] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls\n'}
+[12.909066] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf\n'}
+[12.909098] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config\n'}
+[12.909131] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi\n'}
+[12.909162] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf\n'}
+[12.909207] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config\n'}
+[12.909256] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/meshes\n'}
+[12.909290] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/meshes/tire.dae\n'}
+[12.909322] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/meshes/waffle_pi_base.dae\n'}
+[12.909356] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/meshes/lds.dae\n'}
+[12.909388] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf\n'}
+[12.909437] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room\n'}
+[12.909470] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/troom.blend1\n'}
+[12.909771] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/model.sdf\n'}
+[12.909821] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/troom.blend\n'}
+[12.910315] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/model.config\n'}
+[12.910349] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/meshes\n'}
+[12.910399] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/meshes/wall.dae\n'}
+[12.910432] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/meshes/turtleroom.dae\n'}
+[12.910487] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/meshes/hexagon.dae\n'}
+[12.910531] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house\n'}
+[12.910577] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf\n'}
+[12.910702] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config\n'}
+[12.910746] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description\n'}
+[12.910791] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/CHANGELOG.rst\n'}
+[12.910837] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/world\n'}
+[12.910882] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/world/example.world\n'}
+[12.910931] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/launch\n'}
+[12.910965] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/launch/example.launch.py\n'}
+[12.911009] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/urdf\n'}
+[12.911059] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/urdf/HDL-32E.urdf.xacro\n'}
+[12.911103] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/urdf/VLP-16.urdf.xacro\n'}
+[12.911145] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/urdf/example.urdf.xacro\n'}
+[12.911178] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/package.xml\n'}
+[12.911224] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/CMakeLists.txt\n'}
+[12.911278] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes\n'}
+[12.911310] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/VLP16_scan.stl\n'}
+[12.911341] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/VLP16_base_1.dae\n'}
+[12.911439] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/VLP16_base_2.dae\n'}
+[12.911573] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/HDL32E_base.stl\n'}
+[12.911671] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/VLP16_base_1.stl\n'}
+[12.911758] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/HDL32E_scan.dae\n'}
+[12.911948] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/VLP16_scan.dae\n'}
+[12.912000] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/HDL32E_base.dae\n'}
+[12.912114] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/HDL32E_scan.stl\n'}
+[12.912194] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/VLP16_base_2.stl\n'}
+[12.912266] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/env-hooks\n'}
+[12.912310] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/env-hooks/velodyne_description.dsv.in\n'}
+[12.912355] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/rviz\n'}
+[12.912404] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/rviz/example.rviz\n'}
+[12.912456] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne\n'}
+[12.912491] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes_dae\n'}
+[12.912534] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes_dae/burger_base.dae\n'}
+[12.917833] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes_dae/right_tire.dae\n'}
+[12.919390] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes_dae/left_tire.dae\n'}
+[12.920898] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes_dae/lds.dae\n'}
+[12.921715] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/model.sdf\n'}
+[12.921764] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/model.config\n'}
+[12.921816] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes\n'}
+[12.921851] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes/lds.stl\n'}
+[12.922311] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes/burger_base.stl\n'}
+[12.924678] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes/right_tire.stl\n'}
+[12.925193] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes/left_tire.stl\n'}
+[12.925707] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0\n'}
+[12.925759] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes_dae\n'}
+[12.925806] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes_dae/burger_base.dae\n'}
+[12.931182] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes_dae/right_tire.dae\n'}
+[12.932561] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes_dae/left_tire.dae\n'}
+[12.934026] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes_dae/lds.dae\n'}
+[12.934842] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/model.sdf\n'}
+[12.934911] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/model.config\n'}
+[12.934967] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes\n'}
+[12.935002] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes/lds.stl\n'}
+[12.935341] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes/burger_base.stl\n'}
+[12.937756] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes/right_tire.stl\n'}
+[12.938333] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes/left_tire.stl\n'}
+[12.938872] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger\n'}
+[12.938935] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae\n'}
+[12.938970] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/burger_base.dae\n'}
+[12.941738] (-) TimerEvent: {}
+[12.944192] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/right_tire.dae\n'}
+[12.945709] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/left_tire.dae\n'}
+[12.947267] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/lds.dae\n'}
+[12.948077] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf\n'}
+[12.948143] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf\n'}
+[12.948178] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config\n'}
+[12.948211] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes\n'}
+[12.948242] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/lds.stl\n'}
+[12.948488] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/burger_base.stl\n'}
+[12.950962] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/right_tire.stl\n'}
+[12.951457] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/left_tire.stl\n'}
+[12.952075] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0\n'}
+[12.952141] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes_dae\n'}
+[12.952184] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes_dae/burger_base.dae\n'}
+[12.957114] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes_dae/right_tire.dae\n'}
+[12.958569] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes_dae/left_tire.dae\n'}
+[12.960131] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes_dae/lds.dae\n'}
+[12.960992] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/model.sdf\n'}
+[12.961051] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/model-1_4.sdf\n'}
+[12.961087] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/model.config\n'}
+[12.961117] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes\n'}
+[12.961146] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes/lds.stl\n'}
+[12.961396] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes/burger_base.stl\n'}
+[12.963743] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes/right_tire.stl\n'}
+[12.964358] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes/left_tire.stl\n'}
+[12.964937] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle\n'}
+[12.965021] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf\n'}
+[12.965070] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf\n'}
+[12.965113] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config\n'}
+[12.965155] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/meshes\n'}
+[12.965197] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/meshes/tire.dae\n'}
+[12.965257] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/meshes/r200.dae\n'}
+[12.965336] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/meshes/waffle_base.dae\n'}
+[12.965373] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/meshes/lds.dae\n'}
+[12.965405] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1\n'}
+[12.965437] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes_dae\n'}
+[12.965468] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes_dae/burger_base.dae\n'}
+[12.970806] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes_dae/right_tire.dae\n'}
+[12.972364] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes_dae/left_tire.dae\n'}
+[12.973897] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes_dae/lds.dae\n'}
+[12.974648] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/model.sdf\n'}
+[12.974719] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/model.config\n'}
+[12.974783] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes\n'}
+[12.974816] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes/lds.stl\n'}
+[12.975198] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes/burger_base.stl\n'}
+[12.977642] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes/right_tire.stl\n'}
+[12.978169] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes/left_tire.stl\n'}
+[12.978703] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace\n'}
+[12.978787] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop\n'}
+[12.978836] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop/model.sdf\n'}
+[12.978880] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop/model.config\n'}
+[12.978923] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop/materials\n'}
+[12.978965] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop/materials/textures\n'}
+[12.979024] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop/materials/textures/traffic_stop.png\n'}
+[12.979107] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop/materials/scripts\n'}
+[12.979156] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop/materials/scripts/traffic_stop.material\n'}
+[12.979198] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down\n'}
+[12.979241] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down/model.sdf\n'}
+[12.979283] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down/model.config\n'}
+[12.979325] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down/materials\n'}
+[12.979366] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down/materials/textures\n'}
+[12.979427] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down/materials/textures/traffic_bar.png\n'}
+[12.979488] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down/materials/scripts\n'}
+[12.979529] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down/materials/scripts/traffic_bar.material\n'}
+[12.979570] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/tunnel_obstacles\n'}
+[12.979643] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/tunnel_obstacles/model.sdf\n'}
+[12.979687] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/tunnel_obstacles/model.config\n'}
+[12.979729] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_red\n'}
+[12.979769] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_red/model.sdf\n'}
+[12.979811] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_red/model.config\n'}
+[12.979852] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/tunnel_wall\n'}
+[12.979894] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/tunnel_wall/model.sdf\n'}
+[12.979935] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/tunnel_wall/model.config\n'}
+[12.979985] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up\n'}
+[12.980028] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up/model.sdf\n'}
+[12.980070] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up/model.config\n'}
+[12.980138] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up/materials\n'}
+[12.980183] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up/materials/textures\n'}
+[12.980247] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up/materials/textures/traffic_bar.png\n'}
+[12.980290] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up/materials/scripts\n'}
+[12.980332] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up/materials/scripts/traffic_bar.material\n'}
+[12.980375] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_yellow\n'}
+[12.980416] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_yellow/model.sdf\n'}
+[12.980475] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_yellow/model.config\n'}
+[12.980509] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking\n'}
+[12.980551] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking/model.sdf\n'}
+[12.980593] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking/model.config\n'}
+[12.980654] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking/materials\n'}
+[12.980697] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking/materials/textures\n'}
+[12.980739] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking/materials/textures/traffic_parking.png\n'}
+[12.980780] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking/materials/scripts\n'}
+[12.980822] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking/materials/scripts/traffic_parking.material\n'}
+[12.980863] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel\n'}
+[12.980904] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel/model.sdf\n'}
+[12.980946] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel/model.config\n'}
+[12.980987] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel/materials\n'}
+[12.981028] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel/materials/textures\n'}
+[12.981070] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel/materials/textures/tunnel.png\n'}
+[12.981111] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel/materials/scripts\n'}
+[12.981152] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel/materials/scripts/tunnel.material\n'}
+[12.981193] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/lights\n'}
+[12.981244] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/lights/model.sdf\n'}
+[12.981287] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/lights/model.config\n'}
+[12.981359] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/model.config\n'}
+[12.981403] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_green\n'}
+[12.981463] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_green/model.sdf\n'}
+[12.981505] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_green/model.config\n'}
+[12.981546] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/ground\n'}
+[12.981588] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/ground/model.sdf\n'}
+[12.981661] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/ground/model.config\n'}
+[12.981704] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course\n'}
+[12.981748] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course/model.sdf\n'}
+[12.981789] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course/model.config\n'}
+[12.981829] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course/materials\n'}
+[12.981870] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course/materials/textures\n'}
+[12.981933] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course/materials/textures/course.png\n'}
+[12.981974] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course/materials/scripts\n'}
+[12.982015] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course/materials/scripts/course.material\n'}
+[12.982055] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz\n'}
+[12.982096] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz\n'}
+[12.982137] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds\n'}
+[12.982178] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_houses\n'}
+[12.982219] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_houses/burger.model\n'}
+[12.982259] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_houses/waffle_pi.model\n'}
+[12.982300] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_houses/waffle.model\n'}
+[12.982341] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/example.world\n'}
+[12.982382] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4\n'}
+[12.982423] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4/burger.model\n'}
+[12.982476] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4/waffle_pi.model\n'}
+[12.982517] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4/waffle.model\n'}
+[12.982558] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_tc_robots.world\n'}
+[12.982605] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_tc_two_robots.world\n'}
+[12.982690] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_tc_two_robots_velodyne.world\n'}
+[12.982749] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2\n'}
+[12.982785] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2/burger.model\n'}
+[12.982827] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2/waffle_pi.model\n'}
+[12.982869] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2/waffle.model\n'}
+[12.982910] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3\n'}
+[12.982951] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3/burger.model\n'}
+[12.982992] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3/waffle_pi.model\n'}
+[12.983033] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3/waffle.model\n'}
+[12.983074] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_worlds\n'}
+[12.983115] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_worlds/burger.model\n'}
+[12.983156] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_worlds/waffle_pi.model\n'}
+[12.983212] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_worlds/waffle.model\n'}
+[12.983254] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_autoraces\n'}
+[12.983295] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_autoraces/burger.model\n'}
+[12.983336] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_autoraces/waffle_pi.model\n'}
+[12.983377] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_autoraces/waffle.model\n'}
+[12.983418] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_worlds\n'}
+[12.983459] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_worlds/burger.model\n'}
+[12.983529] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_worlds/waffle_pi.model\n'}
+[12.983572] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_worlds/waffle.model\n'}
+[12.983629] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1\n'}
+[12.983661] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1/burger.model\n'}
+[12.983703] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1/waffle_pi.model\n'}
+[12.983744] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1/waffle.model\n'}
+[12.983785] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_velodyne_robots.world\n'}
+[12.983826] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf\n'}
+[12.983867] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_velodyne_burger.urdf\n'}
+[12.983908] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf\n'}
+[12.983948] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/include/\n'}
+[12.983990] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/include//turtlebot3_gazebo\n'}
+[12.984030] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp\n'}
+[12.984071] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo\n'}
+[12.984112] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo\n'}
+[12.984153] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh\n'}
+[12.984203] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv\n'}
+[12.984245] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh\n'}
+[12.984320] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv\n'}
+[12.984364] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash\n'}
+[12.984405] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh\n'}
+[12.984447] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh\n'}
+[12.984488] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv\n'}
+[12.984529] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv\n'}
+[12.984570] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo\n'}
+[12.984630] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.984667] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[12.984698] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake\n'}
+[12.984728] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake\n'}
+[12.984758] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml\n'}
+[12.985743] (turtlebot3_gazebo) CommandEnded: {'returncode': 0}
+[13.017741] (turtlebot3_gazebo) JobEnded: {'identifier': 'turtlebot3_gazebo', 'rc': 0}
+[13.019813] (turtlebot3_simulations) JobStarted: {'identifier': 'turtlebot3_simulations'}
+[13.023587] (turtlebot3_simulations) JobProgress: {'identifier': 'turtlebot3_simulations', 'progress': 'cmake'}
+[13.023729] (turtlebot3_simulations) Command: {'cmd': ['/usr/bin/cmake', '/workspace/src/turtlebot3_simulations/turtlebot3_simulations', '-DCMAKE_INSTALL_PREFIX=/workspace/install/turtlebot3_simulations'], 'cwd': '/workspace/build/turtlebot3_simulations', 'env': OrderedDict([('HOSTNAME', 'tuf'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models/'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/turtlebot3_gazebo:/workspace/install/turtlebot3_description:/opt/ros/humble'), ('PWD', '/workspace/build/turtlebot3_simulations'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/turtlebot3_gazebo:/workspace/install/turtlebot3_description:/opt/ros/humble')]), 'shell': False}
+[13.041842] (-) TimerEvent: {}
+[13.058240] (turtlebot3_simulations) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[13.095589] (turtlebot3_simulations) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[13.100491] (turtlebot3_simulations) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[13.141969] (-) TimerEvent: {}
+[13.149172] (turtlebot3_simulations) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[13.159087] (turtlebot3_simulations) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[13.159209] (turtlebot3_simulations) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[13.159517] (turtlebot3_simulations) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[13.161921] (turtlebot3_simulations) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[13.214943] (turtlebot3_simulations) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[13.221582] (turtlebot3_simulations) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[13.221721] (turtlebot3_simulations) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[13.222138] (turtlebot3_simulations) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[13.224661] (turtlebot3_simulations) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[13.242059] (-) TimerEvent: {}
+[13.329732] (turtlebot3_simulations) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[13.342152] (-) TimerEvent: {}
+[13.429155] (turtlebot3_simulations) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.430506] (turtlebot3_simulations) StdoutLine: {'line': b'-- Generating done\n'}
+[13.431045] (turtlebot3_simulations) StdoutLine: {'line': b'-- Build files have been written to: /workspace/build/turtlebot3_simulations\n'}
+[13.433796] (turtlebot3_simulations) CommandEnded: {'returncode': 0}
+[13.434103] (turtlebot3_simulations) JobProgress: {'identifier': 'turtlebot3_simulations', 'progress': 'build'}
+[13.434349] (turtlebot3_simulations) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/build/turtlebot3_simulations', '--', '-j8', '-l8'], 'cwd': '/workspace/build/turtlebot3_simulations', 'env': OrderedDict([('HOSTNAME', 'tuf'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models/'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/turtlebot3_gazebo:/workspace/install/turtlebot3_description:/opt/ros/humble'), ('PWD', '/workspace/build/turtlebot3_simulations'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/turtlebot3_gazebo:/workspace/install/turtlebot3_description:/opt/ros/humble')]), 'shell': False}
+[13.442247] (-) TimerEvent: {}
+[13.457238] (turtlebot3_simulations) CommandEnded: {'returncode': 0}
+[13.472456] (turtlebot3_simulations) JobProgress: {'identifier': 'turtlebot3_simulations', 'progress': 'install'}
+[13.472845] (turtlebot3_simulations) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/build/turtlebot3_simulations'], 'cwd': '/workspace/build/turtlebot3_simulations', 'env': OrderedDict([('HOSTNAME', 'tuf'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace/src'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/workspace/src/turtlebot3_simulations/turtlebot3_gazebo/models/'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/workspace/install/turtlebot3_gazebo:/workspace/install/turtlebot3_description:/opt/ros/humble'), ('PWD', '/workspace/build/turtlebot3_simulations'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/install/turtlebot3_gazebo:/workspace/install/turtlebot3_description:/opt/ros/humble')]), 'shell': False}
+[13.479878] (turtlebot3_simulations) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.480126] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/ament_index/resource_index/package_run_dependencies/turtlebot3_simulations\n'}
+[13.480266] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/ament_index/resource_index/parent_prefix_path/turtlebot3_simulations\n'}
+[13.480403] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/turtlebot3_simulations/environment/ament_prefix_path.sh\n'}
+[13.480501] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/turtlebot3_simulations/environment/ament_prefix_path.dsv\n'}
+[13.480590] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/turtlebot3_simulations/environment/path.sh\n'}
+[13.480698] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/turtlebot3_simulations/environment/path.dsv\n'}
+[13.480782] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/turtlebot3_simulations/local_setup.bash\n'}
+[13.480869] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/turtlebot3_simulations/local_setup.sh\n'}
+[13.480961] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/turtlebot3_simulations/local_setup.zsh\n'}
+[13.481045] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/turtlebot3_simulations/local_setup.dsv\n'}
+[13.481110] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/turtlebot3_simulations/package.dsv\n'}
+[13.481197] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/ament_index/resource_index/packages/turtlebot3_simulations\n'}
+[13.481278] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/turtlebot3_simulations/cmake/turtlebot3_simulationsConfig.cmake\n'}
+[13.481331] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/turtlebot3_simulations/cmake/turtlebot3_simulationsConfig-version.cmake\n'}
+[13.481393] (turtlebot3_simulations) StdoutLine: {'line': b'-- Installing: /workspace/install/turtlebot3_simulations/share/turtlebot3_simulations/package.xml\n'}
+[13.482555] (turtlebot3_simulations) CommandEnded: {'returncode': 0}
+[13.510669] (turtlebot3_simulations) JobEnded: {'identifier': 'turtlebot3_simulations', 'rc': 0}
+[13.511444] (-) EventReactorShutdown: {}

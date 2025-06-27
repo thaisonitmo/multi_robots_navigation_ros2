@@ -1,0 +1,36 @@
+running egg_info
+writing ../../build/localization_server/localization_server.egg-info/PKG-INFO
+writing dependency_links to ../../build/localization_server/localization_server.egg-info/dependency_links.txt
+writing entry points to ../../build/localization_server/localization_server.egg-info/entry_points.txt
+writing requirements to ../../build/localization_server/localization_server.egg-info/requires.txt
+writing top-level names to ../../build/localization_server/localization_server.egg-info/top_level.txt
+reading manifest file '../../build/localization_server/localization_server.egg-info/SOURCES.txt'
+writing manifest file '../../build/localization_server/localization_server.egg-info/SOURCES.txt'
+running build
+running build_py
+copying localization_server/initial_pose_pub.py -> /workspace/build/localization_server/build/lib/localization_server
+copying localization_server/__init__.py -> /workspace/build/localization_server/build/lib/localization_server
+running install
+running install_lib
+copying /workspace/build/localization_server/build/lib/localization_server/initial_pose_pub.py -> /workspace/install/localization_server/lib/python3.10/site-packages/localization_server
+copying /workspace/build/localization_server/build/lib/localization_server/__init__.py -> /workspace/install/localization_server/lib/python3.10/site-packages/localization_server
+byte-compiling /workspace/install/localization_server/lib/python3.10/site-packages/localization_server/initial_pose_pub.py to initial_pose_pub.cpython-310.pyc
+byte-compiling /workspace/install/localization_server/lib/python3.10/site-packages/localization_server/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/localization_server -> /workspace/install/localization_server/share/ament_index/resource_index/packages
+copying package.xml -> /workspace/install/localization_server/share/localization_server
+copying launch/multi_localization.launch.py -> /workspace/install/localization_server/share/localization_server/launch
+copying launch/localization.launch.py -> /workspace/install/localization_server/share/localization_server/launch
+copying launch/init_robot.launch.py -> /workspace/install/localization_server/share/localization_server/launch
+copying config/turtlebot_area.pgm -> /workspace/install/localization_server/share/localization_server/config
+copying config/turtlebot_area.yaml -> /workspace/install/localization_server/share/localization_server/config
+copying config/amcl_config.yaml -> /workspace/install/localization_server/share/localization_server/config
+copying config/amcl_config_initialized.yaml -> /workspace/install/localization_server/share/localization_server/config
+copying config/tb3_0_amcl_config.yaml -> /workspace/install/localization_server/share/localization_server/config
+copying config/tb3_1_amcl_config.yaml -> /workspace/install/localization_server/share/localization_server/config
+running install_egg_info
+removing '/workspace/install/localization_server/lib/python3.10/site-packages/localization_server-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/localization_server/localization_server.egg-info to /workspace/install/localization_server/lib/python3.10/site-packages/localization_server-0.0.0-py3.10.egg-info
+running install_scripts
+Installing initial_pose_pub script to /workspace/install/localization_server/lib/localization_server
+writing list of installed files to '/workspace/build/localization_server/install.log'

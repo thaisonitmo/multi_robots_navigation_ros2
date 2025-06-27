@@ -1,0 +1,47 @@
+[1.075s] Invoking command in '/workspace/src/path_planner_server': PYTHONPATH=/workspace/build/path_planner_server/prefix_override:/workspace/install/path_planner_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/path_planner_server build --build-base /workspace/build/path_planner_server/build install --record /workspace/build/path_planner_server/install.log --single-version-externally-managed
+[1.245s] running egg_info
+[1.246s] writing ../../build/path_planner_server/path_planner_server.egg-info/PKG-INFO
+[1.246s] writing dependency_links to ../../build/path_planner_server/path_planner_server.egg-info/dependency_links.txt
+[1.246s] writing entry points to ../../build/path_planner_server/path_planner_server.egg-info/entry_points.txt
+[1.246s] writing requirements to ../../build/path_planner_server/path_planner_server.egg-info/requires.txt
+[1.246s] writing top-level names to ../../build/path_planner_server/path_planner_server.egg-info/top_level.txt
+[1.247s] reading manifest file '../../build/path_planner_server/path_planner_server.egg-info/SOURCES.txt'
+[1.248s] writing manifest file '../../build/path_planner_server/path_planner_server.egg-info/SOURCES.txt'
+[1.248s] running build
+[1.248s] running build_py
+[1.248s] copying path_planner_server/nav_to_pose_action_client.py -> /workspace/build/path_planner_server/build/lib/path_planner_server
+[1.248s] copying path_planner_server/__init__.py -> /workspace/build/path_planner_server/build/lib/path_planner_server
+[1.248s] running install
+[1.249s] running install_lib
+[1.249s] copying /workspace/build/path_planner_server/build/lib/path_planner_server/nav_to_pose_action_client.py -> /workspace/install/path_planner_server/lib/python3.10/site-packages/path_planner_server
+[1.249s] copying /workspace/build/path_planner_server/build/lib/path_planner_server/__init__.py -> /workspace/install/path_planner_server/lib/python3.10/site-packages/path_planner_server
+[1.249s] byte-compiling /workspace/install/path_planner_server/lib/python3.10/site-packages/path_planner_server/nav_to_pose_action_client.py to nav_to_pose_action_client.cpython-310.pyc
+[1.250s] byte-compiling /workspace/install/path_planner_server/lib/python3.10/site-packages/path_planner_server/__init__.py to __init__.cpython-310.pyc
+[1.250s] running install_data
+[1.250s] copying resource/path_planner_server -> /workspace/install/path_planner_server/share/ament_index/resource_index/packages
+[1.250s] copying package.xml -> /workspace/install/path_planner_server/share/path_planner_server
+[1.251s] copying launch/cartographer-navigation.launch.py -> /workspace/install/path_planner_server/share/path_planner_server/launch
+[1.251s] copying launch/navigation.launch.py -> /workspace/install/path_planner_server/share/path_planner_server/launch
+[1.251s] copying launch/multi_pathplanner.launch.py -> /workspace/install/path_planner_server/share/path_planner_server/launch
+[1.251s] copying launch/pathplanner.launch.py -> /workspace/install/path_planner_server/share/path_planner_server/launch
+[1.251s] copying launch/multi_main.launch.xml -> /workspace/install/path_planner_server/share/path_planner_server/launch
+[1.251s] copying config/controller.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config
+[1.251s] copying config/tb3_1_bt_navigator.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config
+[1.251s] copying config/behavior.xml -> /workspace/install/path_planner_server/share/path_planner_server/config
+[1.251s] copying config/tb3_1_recovery.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config
+[1.251s] copying config/tb3_0_recovery.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config
+[1.251s] copying config/planner_server.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config
+[1.251s] copying config/recovery.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config
+[1.252s] copying config/tb3_1_planner_server.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config
+[1.252s] copying config/bt_navigator.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config
+[1.252s] copying config/tb3_0_controller.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config
+[1.252s] copying config/tb3_1_controller.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config
+[1.252s] copying config/tb3_0_planner_server.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config
+[1.252s] copying config/tb3_0_bt_navigator.yaml -> /workspace/install/path_planner_server/share/path_planner_server/config
+[1.252s] running install_egg_info
+[1.253s] removing '/workspace/install/path_planner_server/lib/python3.10/site-packages/path_planner_server-0.0.0-py3.10.egg-info' (and everything under it)
+[1.253s] Copying ../../build/path_planner_server/path_planner_server.egg-info to /workspace/install/path_planner_server/lib/python3.10/site-packages/path_planner_server-0.0.0-py3.10.egg-info
+[1.253s] running install_scripts
+[1.267s] Installing nav_to_pose script to /workspace/install/path_planner_server/lib/path_planner_server
+[1.268s] writing list of installed files to '/workspace/build/path_planner_server/install.log'
+[1.292s] Invoked command in '/workspace/src/path_planner_server' returned '0': PYTHONPATH=/workspace/build/path_planner_server/prefix_override:/workspace/install/path_planner_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/path_planner_server build --build-base /workspace/build/path_planner_server/build install --record /workspace/build/path_planner_server/install.log --single-version-externally-managed

@@ -1,0 +1,21 @@
+[0.982s] Invoking command in '/workspace/src/localization_server': PYTHONPATH=/workspace/build/localization_server/prefix_override:/workspace/install/localization_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/localization_server build --build-base /workspace/build/localization_server/build install --record /workspace/build/localization_server/install.log --single-version-externally-managed
+[1.257s] running egg_info
+[1.258s] writing ../../build/localization_server/localization_server.egg-info/PKG-INFO
+[1.258s] writing dependency_links to ../../build/localization_server/localization_server.egg-info/dependency_links.txt
+[1.258s] writing entry points to ../../build/localization_server/localization_server.egg-info/entry_points.txt
+[1.259s] writing requirements to ../../build/localization_server/localization_server.egg-info/requires.txt
+[1.259s] writing top-level names to ../../build/localization_server/localization_server.egg-info/top_level.txt
+[1.261s] reading manifest file '../../build/localization_server/localization_server.egg-info/SOURCES.txt'
+[1.262s] writing manifest file '../../build/localization_server/localization_server.egg-info/SOURCES.txt'
+[1.262s] running build
+[1.262s] running build_py
+[1.262s] running install
+[1.262s] running install_lib
+[1.264s] running install_data
+[1.264s] running install_egg_info
+[1.266s] removing '/workspace/install/localization_server/lib/python3.10/site-packages/localization_server-0.0.0-py3.10.egg-info' (and everything under it)
+[1.266s] Copying ../../build/localization_server/localization_server.egg-info to /workspace/install/localization_server/lib/python3.10/site-packages/localization_server-0.0.0-py3.10.egg-info
+[1.267s] running install_scripts
+[1.290s] Installing initial_pose_pub script to /workspace/install/localization_server/lib/localization_server
+[1.291s] writing list of installed files to '/workspace/build/localization_server/install.log'
+[1.334s] Invoked command in '/workspace/src/localization_server' returned '0': PYTHONPATH=/workspace/build/localization_server/prefix_override:/workspace/install/localization_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/localization_server build --build-base /workspace/build/localization_server/build install --record /workspace/build/localization_server/install.log --single-version-externally-managed

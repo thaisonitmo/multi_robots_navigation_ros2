@@ -1,0 +1,40 @@
+[1.012s] Invoking command in '/workspace/src/map_server': PYTHONPATH=/workspace/build/map_server/prefix_override:/workspace/install/map_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/map_server build --build-base /workspace/build/map_server/build install --record /workspace/build/map_server/install.log --single-version-externally-managed
+[1.190s] running egg_info
+[1.190s] creating ../../build/map_server/map_server.egg-info
+[1.190s] writing ../../build/map_server/map_server.egg-info/PKG-INFO
+[1.191s] writing dependency_links to ../../build/map_server/map_server.egg-info/dependency_links.txt
+[1.191s] writing entry points to ../../build/map_server/map_server.egg-info/entry_points.txt
+[1.191s] writing requirements to ../../build/map_server/map_server.egg-info/requires.txt
+[1.191s] writing top-level names to ../../build/map_server/map_server.egg-info/top_level.txt
+[1.191s] writing manifest file '../../build/map_server/map_server.egg-info/SOURCES.txt'
+[1.192s] reading manifest file '../../build/map_server/map_server.egg-info/SOURCES.txt'
+[1.193s] writing manifest file '../../build/map_server/map_server.egg-info/SOURCES.txt'
+[1.193s] running build
+[1.193s] running build_py
+[1.193s] creating /workspace/build/map_server/build
+[1.193s] creating /workspace/build/map_server/build/lib
+[1.193s] creating /workspace/build/map_server/build/lib/map_server
+[1.193s] copying map_server/__init__.py -> /workspace/build/map_server/build/lib/map_server
+[1.193s] running install
+[1.194s] running install_lib
+[1.194s] creating /workspace/install/map_server/lib/python3.10/site-packages/map_server
+[1.194s] copying /workspace/build/map_server/build/lib/map_server/__init__.py -> /workspace/install/map_server/lib/python3.10/site-packages/map_server
+[1.194s] byte-compiling /workspace/install/map_server/lib/python3.10/site-packages/map_server/__init__.py to __init__.cpython-310.pyc
+[1.194s] running install_data
+[1.195s] creating /workspace/install/map_server/share/ament_index
+[1.195s] creating /workspace/install/map_server/share/ament_index/resource_index
+[1.195s] creating /workspace/install/map_server/share/ament_index/resource_index/packages
+[1.195s] copying resource/map_server -> /workspace/install/map_server/share/ament_index/resource_index/packages
+[1.195s] copying package.xml -> /workspace/install/map_server/share/map_server
+[1.195s] creating /workspace/install/map_server/share/map_server/launch
+[1.195s] copying launch/nav2_map_server.launch.py -> /workspace/install/map_server/share/map_server/launch
+[1.195s] creating /workspace/install/map_server/share/map_server/config
+[1.195s] copying config/turtlebot_area_two_robots.pgm -> /workspace/install/map_server/share/map_server/config
+[1.195s] copying config/turtlebot_area_two_robots.yaml -> /workspace/install/map_server/share/map_server/config
+[1.195s] copying config/turtlebot_area_two_robots_clean.pgm -> /workspace/install/map_server/share/map_server/config
+[1.196s] copying config/turtlebot_area_two_robots_clean.yaml -> /workspace/install/map_server/share/map_server/config
+[1.196s] running install_egg_info
+[1.196s] Copying ../../build/map_server/map_server.egg-info to /workspace/install/map_server/lib/python3.10/site-packages/map_server-0.0.0-py3.10.egg-info
+[1.197s] running install_scripts
+[1.212s] writing list of installed files to '/workspace/build/map_server/install.log'
+[1.239s] Invoked command in '/workspace/src/map_server' returned '0': PYTHONPATH=/workspace/build/map_server/prefix_override:/workspace/install/map_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/map_server build --build-base /workspace/build/map_server/build install --record /workspace/build/map_server/install.log --single-version-externally-managed

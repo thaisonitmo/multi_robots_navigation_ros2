@@ -1,0 +1,20 @@
+[1.014s] Invoking command in '/workspace/src/map_server': PYTHONPATH=/workspace/build/map_server/prefix_override:/workspace/install/map_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/map_server build --build-base /workspace/build/map_server/build install --record /workspace/build/map_server/install.log --single-version-externally-managed
+[1.306s] running egg_info
+[1.307s] writing ../../build/map_server/map_server.egg-info/PKG-INFO
+[1.307s] writing dependency_links to ../../build/map_server/map_server.egg-info/dependency_links.txt
+[1.307s] writing entry points to ../../build/map_server/map_server.egg-info/entry_points.txt
+[1.308s] writing requirements to ../../build/map_server/map_server.egg-info/requires.txt
+[1.308s] writing top-level names to ../../build/map_server/map_server.egg-info/top_level.txt
+[1.311s] reading manifest file '../../build/map_server/map_server.egg-info/SOURCES.txt'
+[1.312s] writing manifest file '../../build/map_server/map_server.egg-info/SOURCES.txt'
+[1.313s] running build
+[1.313s] running build_py
+[1.313s] running install
+[1.313s] running install_lib
+[1.315s] running install_data
+[1.316s] running install_egg_info
+[1.319s] removing '/workspace/install/map_server/lib/python3.10/site-packages/map_server-0.0.0-py3.10.egg-info' (and everything under it)
+[1.319s] Copying ../../build/map_server/map_server.egg-info to /workspace/install/map_server/lib/python3.10/site-packages/map_server-0.0.0-py3.10.egg-info
+[1.320s] running install_scripts
+[1.339s] writing list of installed files to '/workspace/build/map_server/install.log'
+[1.359s] Invoked command in '/workspace/src/map_server' returned '0': PYTHONPATH=/workspace/build/map_server/prefix_override:/workspace/install/map_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/map_server build --build-base /workspace/build/map_server/build install --record /workspace/build/map_server/install.log --single-version-externally-managed

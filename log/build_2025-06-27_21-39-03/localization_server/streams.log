@@ -1,0 +1,38 @@
+[1.076s] Invoking command in '/workspace/src/localization_server': PYTHONPATH=/workspace/build/localization_server/prefix_override:/workspace/install/localization_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/localization_server build --build-base /workspace/build/localization_server/build install --record /workspace/build/localization_server/install.log --single-version-externally-managed
+[1.270s] running egg_info
+[1.270s] writing ../../build/localization_server/localization_server.egg-info/PKG-INFO
+[1.271s] writing dependency_links to ../../build/localization_server/localization_server.egg-info/dependency_links.txt
+[1.271s] writing entry points to ../../build/localization_server/localization_server.egg-info/entry_points.txt
+[1.271s] writing requirements to ../../build/localization_server/localization_server.egg-info/requires.txt
+[1.271s] writing top-level names to ../../build/localization_server/localization_server.egg-info/top_level.txt
+[1.272s] reading manifest file '../../build/localization_server/localization_server.egg-info/SOURCES.txt'
+[1.273s] writing manifest file '../../build/localization_server/localization_server.egg-info/SOURCES.txt'
+[1.273s] running build
+[1.273s] running build_py
+[1.273s] copying localization_server/initial_pose_pub.py -> /workspace/build/localization_server/build/lib/localization_server
+[1.273s] copying localization_server/__init__.py -> /workspace/build/localization_server/build/lib/localization_server
+[1.273s] running install
+[1.273s] running install_lib
+[1.274s] copying /workspace/build/localization_server/build/lib/localization_server/initial_pose_pub.py -> /workspace/install/localization_server/lib/python3.10/site-packages/localization_server
+[1.274s] copying /workspace/build/localization_server/build/lib/localization_server/__init__.py -> /workspace/install/localization_server/lib/python3.10/site-packages/localization_server
+[1.274s] byte-compiling /workspace/install/localization_server/lib/python3.10/site-packages/localization_server/initial_pose_pub.py to initial_pose_pub.cpython-310.pyc
+[1.275s] byte-compiling /workspace/install/localization_server/lib/python3.10/site-packages/localization_server/__init__.py to __init__.cpython-310.pyc
+[1.275s] running install_data
+[1.275s] copying resource/localization_server -> /workspace/install/localization_server/share/ament_index/resource_index/packages
+[1.275s] copying package.xml -> /workspace/install/localization_server/share/localization_server
+[1.275s] copying launch/multi_localization.launch.py -> /workspace/install/localization_server/share/localization_server/launch
+[1.275s] copying launch/localization.launch.py -> /workspace/install/localization_server/share/localization_server/launch
+[1.275s] copying launch/init_robot.launch.py -> /workspace/install/localization_server/share/localization_server/launch
+[1.275s] copying config/turtlebot_area.pgm -> /workspace/install/localization_server/share/localization_server/config
+[1.275s] copying config/turtlebot_area.yaml -> /workspace/install/localization_server/share/localization_server/config
+[1.276s] copying config/amcl_config.yaml -> /workspace/install/localization_server/share/localization_server/config
+[1.276s] copying config/amcl_config_initialized.yaml -> /workspace/install/localization_server/share/localization_server/config
+[1.276s] copying config/tb3_0_amcl_config.yaml -> /workspace/install/localization_server/share/localization_server/config
+[1.276s] copying config/tb3_1_amcl_config.yaml -> /workspace/install/localization_server/share/localization_server/config
+[1.276s] running install_egg_info
+[1.277s] removing '/workspace/install/localization_server/lib/python3.10/site-packages/localization_server-0.0.0-py3.10.egg-info' (and everything under it)
+[1.277s] Copying ../../build/localization_server/localization_server.egg-info to /workspace/install/localization_server/lib/python3.10/site-packages/localization_server-0.0.0-py3.10.egg-info
+[1.277s] running install_scripts
+[1.292s] Installing initial_pose_pub script to /workspace/install/localization_server/lib/localization_server
+[1.293s] writing list of installed files to '/workspace/build/localization_server/install.log'
+[1.317s] Invoked command in '/workspace/src/localization_server' returned '0': PYTHONPATH=/workspace/build/localization_server/prefix_override:/workspace/install/localization_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/localization_server build --build-base /workspace/build/localization_server/build install --record /workspace/build/localization_server/install.log --single-version-externally-managed
