@@ -5,9 +5,9 @@ options = {
   map_builder = MAP_BUILDER,
   trajectory_builder = TRAJECTORY_BUILDER,
   map_frame = "map",
-  tracking_frame = "tb3_1/base_footprint",
-  published_frame = "tb3_1/odom",
-  odom_frame = "tb3_1/odom",
+  tracking_frame = "tb3_0/base_footprint",
+  published_frame = "tb3_0/odom",
+  odom_frame = "tb3_0/odom",
   provide_odom_frame = false,
   publish_frame_projected_to_2d = true,
   use_odometry = true,
@@ -30,15 +30,15 @@ options = {
 
 MAP_BUILDER.use_trajectory_builder_2d = true
 
-TRAJECTORY_BUILDER_2D.min_range = 0.5
-TRAJECTORY_BUILDER_2D.max_range = 5.5
-TRAJECTORY_BUILDER_2D.missing_data_ray_length = 1.0
-TRAJECTORY_BUILDER_2D.use_imu_data = true
+TRAJECTORY_BUILDER_2D.min_range = 0.12
+TRAJECTORY_BUILDER_2D.max_range = 3.5
+TRAJECTORY_BUILDER_2D.missing_data_ray_length = 3.0
+TRAJECTORY_BUILDER_2D.use_imu_data = false
 TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true 
 TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(0.1)
 
-POSE_GRAPH.constraint_builder.min_score = 0.2
-POSE_GRAPH.constraint_builder.global_localization_min_score = 0.65
+POSE_GRAPH.constraint_builder.min_score = 0.65
+POSE_GRAPH.constraint_builder.global_localization_min_score = 0.7
 
 -- POSE_GRAPH.optimize_every_n_nodes = 0
 
