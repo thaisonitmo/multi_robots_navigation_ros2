@@ -6,7 +6,7 @@ tb3_1/planner_server:
     GridBased:
       plugin: "nav2_navfn_planner/NavfnPlanner"
       tolerance: 0.5
-      use_astar: false
+      use_astar: true
       allow_unknown: true
 
 tb3_1/global_costmap:
@@ -38,11 +38,11 @@ tb3_1/global_costmap:
         scan:
           # The scan is let as is because with namespace on topc it remaps properly , NO f.slash
           topic: /tb3_1/scan
-          max_obstacle_height: 2.0
+          max_obstacle_height: 1.0
           clearing: True
           marking: True
           data_type: "LaserScan"
           raytrace_max_range: 3.0
           raytrace_min_range: 0.0
-          obstacle_max_range: 2.5
+          obstacle_max_range: 1.5
           obstacle_min_range: 0.0
