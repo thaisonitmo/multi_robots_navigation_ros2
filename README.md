@@ -27,6 +27,8 @@ ros2 launch localization_server localization.launch.py
 In another terminal, open RViz window:
 ```bash
 bash docker/into.bash
+```
+```bash
 ros2 launch path_planner_server multi_main.launch.xml 
 ```
 ## Usage
