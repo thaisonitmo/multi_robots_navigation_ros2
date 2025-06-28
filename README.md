@@ -13,18 +13,18 @@ Configure navigation for muilti-robot environments, use the ROS2 Navigation (Nav
 
 ## Installation
 
-Run the docker file.
+Run the docker file:
 
 ```bash
 bash docker/run.bash
 ```
-In Docker, open the Gazebo window.
+In Docker, open the Gazebo window:
 ```bash
 colcon build
 source install/setup.bash
 ros2 launch localization_server localization.launch.py 
 ```
-In another terminal, open RViz window
+In another terminal, open RViz window:
 ```bash
 bash docker/into.bash
 ros2 launch path_planner_server multi_main.launch.xml 
