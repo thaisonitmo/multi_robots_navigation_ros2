@@ -15,10 +15,10 @@ Configure navigation for muilti-robot environments, use the ROS2 Navigation (Nav
 
 Run the docker file:
 
+In one terminal, run docker and some commands to open the Gazebo window:
 ```bash
 bash docker/run.bash
 ```
-In Docker, open the Gazebo window:
 ```bash
 colcon build
 source install/setup.bash
